@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "web";
+  src: url("./Fonts/Vazir-Regular-FD-WOL.ttf") format("true-type"),
+    url("./Fonts/Vazir-Regular-FD-WOL.eot") format("eot"),
+    url("./Fonts/Vazir-Regular-FD-WOL.woff") format("woff"),
+    url("./Fonts/Vazir-Regular-FD-WOL.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "web";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24272e;
+}
+
+/* Header Styling */
+
+header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+header > h1 {
+  color: #24272e;
+  text-align: center;
+}
+
+/* Score Board Styling */
+
+.scoreBoard {
+  margin: 20px auto;
+  border: 3px solid #fff;
+  width: 200px;
+  color: #fff;
+  font-size: 46px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.badge {
+  background-color: #e2584d;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 40px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 40px;
+  right: -25px;
+}
+
+/* Result Styling */
+.result {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.result > p {
+  font-weight: bold;
+}
+
+/* Choices Styling */
+.choices {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.choice {
+  border: 4px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 20px;
+  width: 200px;
+  height: 200px;
+  transition: all ease .3s;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: rgb(0, 153, 255);
+}
+
+.choice .image-container > img {
+  width: 128px;
+  height: 128px;
+}
+
+.choice .image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Action message styling */
+#acion-message{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
